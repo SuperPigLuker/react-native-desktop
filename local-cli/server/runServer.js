@@ -81,7 +81,7 @@ function getPackagerServer(args, config) {
     extraNodeModules: config.extraNodeModules,
     assetRoots: args.assetRoots,
     assetExts: [
-      'bmp', 'gif', 'jpg', 'jpeg', 'png', 'psd', 'svg', 'webp', // Image formats
+      'bmp', 'gif', 'jpg', 'jpeg', 'png', 'psd', 'svg', 'webp', 'icns', // Image formats
       'm4v', 'mov', 'mp4', 'mpeg', 'mpg', 'webm', // Video formats
       'aac', 'aiff', 'caf', 'm4a', 'mp3', 'wav', // Audio formats
       'html', 'pdf', // Document formats

@@ -168,10 +168,43 @@ exports.examples = [
     '"http", then it will be downloaded from the network.',
     render: function() {
       return (
-        <Image
-          source={{uri: 'gear.icns'}}
-          style={styles.base}
-        />
+        <View style={{flexDirection: 'row'}}>
+          <Image
+            source={{uri: 'gear.icns'}}
+            style={{width: 100, height: 100}}
+          />
+          <Image
+            source={{uri: 'gear.icns'}}
+            style={styles.base}
+          />
+          <Image
+            source={{uri: 'gear.icns'}}
+            style={{width: 15, height: 15}}
+          />
+        </View>
+      );
+    },
+  },
+  {
+    title: 'Plain Local Image',
+    description: 'If the `source` prop `uri` property is prefixed with ' +
+    '"http", then it will be downloaded from the network.',
+    render: function() {
+      return (
+        <View style={{flexDirection: 'row'}}>
+          <Image
+            source={require('./gear.icns')}
+            style={{width: 100, height: 100}}
+          />
+          <Image
+            source={require('./gear.icns')}
+            style={styles.base}
+          />
+          <Image
+            source={require('./gear.icns')}
+            style={{width: 15, height: 15}}
+          />
+        </View>
       );
     },
   },
